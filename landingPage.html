@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mess'Up - Landing Page</title>
+    <link rel="stylesheet" href="./style/reset.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="./lib/materialize/css/materialize.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="./style/styleLandingPage.css" media="screen" title="no title" charset="utf-8">
+    <script src="lib/jquery/jquery-2.2.1.min.js"></script>
+    <script src="./lib/materialize/js/materialize.min.js" charset="utf-8"></script>
+</head>
+<body>
+<header>
+    <h1><img src="assets/img/LogoLandingPage.png" alt=""></h1>
+    <ul>
+        <li><a href="#modal1" class="modal-trigger waves-effect waves-light btn white">M'identifier</a></li>
+        <li><a href="#modal2" class="modal-trigger waves-effect waves-light btn">M'inscrire</a></li>
+    </ul>
+</header>
+<div class="inner">
+    <p>
+        <strong class="white-text">Et si vous n’utilisiez qu’une seule messagerie ?</strong>
+    </p>
+    <div class="wrapperButton">
+        <a href="#modal2" class="modal-trigger waves-effect waves-light btn-large">M’inscrire sur mess’up</a>
+    </div>
+</div>
+
+<!-- Modal Structure Connect-->
+<div id="modal1" class="modal modal-fixed-footer">
+    <div class="modal-content">
+        <h2>M'identifier</h2>
+
+        <form class="col s12">
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="email" type="email" class="validate">
+                    <label for="email">Email</label>
+                </div>
+                <div class="input-field col s12">
+                    <input id="password" type="password" class="validate">
+                    <label for="password">Mot de passe</label>
+                </div>
+                <div class="forgotPwd col s12">
+                    <a href="#">Mot de passe oublié ?</a>
+                </div>
+                <input type="submit" class="modal-action modal-close waves-effect waves-green btn-large" value="Valider">
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Modal Structure Register -->
+<div id="modal2" class="modal modal-fixed-footer">
+    <div class="modal-content">
+        <h2>M'inscrire</h2>
+        <form class="col s12">
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="nickname" type="text" class="validate">
+                    <label for="nickname">Pseudonyme</label>
+                </div>
+                <div class="input-field col s12">
+                    <input id="emailRegister" type="email" class="validate">
+                    <label for="emailRegister">Email</label>
+                </div>
+                <div class="input-field col s12">
+                    <input id="passwordRegister" type="password" class="validate">
+                    <label for="passwordRegister">Mot de passe</label>
+                </div>
+                <div class="input-field col s12">
+                    <input id="passwordRegisterAgain" type="password" class="validate">
+                    <label for="passwordRegisterAgain">Confirmer mot de passe</label>
+                </div>
+                <div class="input-field col s12">
+                <input type="submit" class="modal-action modal-close waves-effect waves-green btn-large" value="Valider">
+            </div>
+        </form>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+        $('.modal-trigger').leanModal();
+    });
+</script>
+</body>
+</html>

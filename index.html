@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Mess'up</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="./style/reset.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="./lib/materialize/css/materialize.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="./style/style.css" media="screen" title="no title" charset="utf-8">
+    </head>
+    <body>
+        <div class="row">
+            <div class="contact col s3">
+                <div class="headerDiv blue darken-1 valign-wrapper">
+                    <div class="col s8 offset-s2">
+                        <i class="small material-icons settingsIcon left">settings</i>
+                        <i class="small material-icons showContact right">trending_flat</i>
+                    </div>
+                </div>
+                <div class="search grey lighten-3">
+                    <div class="input-field col s10 offset-s1">
+                      <input id="searchContact" type="text" placeholder="Rechercher un contact..." class="validate">
+                    </div>
+                    <div class="searchApp">
+                        <div class="facebookApp">
+                            <input type="checkbox" class="filled-in" id="checkFacebook" checked="checked" />
+                            <label for="checkFacebook">Facebook</label>
+                        </div>
+                        <div class="hangoutApp">
+                            <input type="checkbox" class="filled-in" id="checkHangout" checked="checked" />
+                            <label for="checkHangout">Hangout</label>
+                        </div>
+                        <div class="twitterApp">
+                            <input type="checkbox" class="filled-in" id="checkTwitter" checked="checked" />
+                            <label for="checkTwitter">Twitter</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="listContact">
+                    <ul class="collection">
+                        <li class="collection-item avatar">
+                            <img src="./assets/img/profil.png" alt="" class="circle" />
+                            <p>Name profil</p>
+                        </li>
+                        <li class="collection-item avatar">
+                            <img src="./assets/img/profil.png" alt="" class="circle" />
+                            <p>Name profil</p>
+                        </li>
+                        <li class="collection-item avatar">
+                            <img src="./assets/img/profil.png" alt="" class="circle" />
+                            <p>Name profil</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main col s6">
+                <div class="headerDiv blue lighten-1 valign-wrapper mainHeader">
+                    <h4>David Hasselhoff</h4>
+                </div>
+                <div class="listMess grey lighten-3">
+                    <ul  class="col s9 offset-s2">
+                        <li>
+                            <div class="valign-wrapper">
+                                <img src="./assets/img/profil.png" alt="" class="circle">
+                                <p class="card-panel blue lighten-1 lengthMess">Bonjour David, je vous contacte en espérant que vous
+                                    pourrriez me donner mon diplôme ! Bien à vous.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="valign-wrapper">
+                                <p class="card-panel blue lighten-5 lengthMess">Étant donné votre constante assiduité, ce sera un réel
+                                    plaisir de vous faire ce présent. Bises mon tout doux !</p>
+                                <img src="./assets/img/profil.png" alt="" class="circle">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="input-field sendMess grey lighten-3">
+                    <input id="inputMessage" type="text" placeholder="message" class="validate col s7 offset-s1">
+                    <button class="btn waves-effect waves-light push-s2 sendButton" type="submit" name="action">Envoyer</button>
+                </div>
+            </div>
+            <div class="profil col s3">
+                <div class="headerDiv blue darken-1 valign-wrapper">
+                    <div class="col s8 offset-s2">
+                        <i class="small material-icons left" id="showProfil">trending_flat</i>
+                    </div>
+                </div>
+                <div class="infoContact valign-wrapper">
+                    <img src="./assets/img/profil.png" class="" alt="">
+                    <p>Info contact</p>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="./lib/jquery/jquery-2.2.1.min.js" charset="utf-8"></script>
+    <script src="./lib/materialize/js/materialize.min.js" charset="utf-8"></script>
+    <script src="./scripts/script.js" charset="utf-8"></script>
+</html>

@@ -1,0 +1,75 @@
+/*Index Page*/
+.contact, .main, .profil{
+    height: 100vh;
+}
+.headerDiv{
+    height: 10vh;
+}
+.settingsIcon{
+    /*margin-left: 46px;*/
+}
+.showContact{
+    transform: scaleX(-1);
+}
+.mainHeader{
+    justify-content: center;
+}
+.listContact ul li:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.listMess{
+    height: 85vh;
+    background: url(../assets/img/logo4.png) no-repeat center top;
+    display: flex;
+    align-items: flex-end;
+}
+.boxMess{
+    box-sizing: border-box;
+}
+.sendMess{
+    height: 5vh;
+}
+.infoContact{
+    height: 90vh;
+}
+i{
+    color: white;
+}
+i:hover{
+    cursor: pointer;
+}
+[type="checkbox"].filled-in:checked + label:after {
+  border: 2px solid #1e88e5;
+  background-color: #1e88e5;
+}
+.row .col{
+    padding:0 0;
+}
+.input-field{
+    margin: 0;
+}
+.lengthMess{
+    width: 83.3333333333%;
+}
+.sendButton{
+    margin-left:8.3333333333%;
+}
+input[type=text]:focus:not([readonly]){
+    border-bottom: 1px solid #26a69a;
+    box-shadow: 0 1px 0 0 #26a69a;
+}
+input[type=text]:focus:not([readonly]) + label{
+    color: #26a69a;
+}
+input[type=text].valid,
+input[type=text]:focus.valid{
+    border-bottom: 1px solid #4CAF50;
+    box-shadow: 0 1px 0 0 #4CAF50;
+}
+
+input[type=text].valid + label:after,
+input[type=text]:focus.valid + label:after{
+    content: attr(data-success);
+    color: #4CAF50;
+    opacity: 1;
+}
